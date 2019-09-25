@@ -1,6 +1,12 @@
 ### Wielomian - Well formed class (15 pkt.)
 
-Wielomian, to znane Ci pojęcie z matematyki ( [Wielomian @Wikipedia](https://pl.wikipedia.org/wiki/Wielomian) ):
+> Autor: _Krzysztof Molenda_
+> Wersja: 1.2 (2019.09.01)
+
+⚠️ UWAGA: [wersja html tego dokumentu, z poprawnie renderowanymi równaniami matematycznymi](https://kmolenda.github.io/cs201-spr-Wielomian.html)
+
+Wielomian
+    ~ Wielomian, to znane Ci pojęcie z matematyki ( [Wielomian @Wikipedia](https://pl.wikipedia.org/wiki/Wielomian) ):
 
 \[ a_n x^n + a_{n-1} x^{n-1} + ... + a_2 x^2 + a_1 x + a_0 \]
 
@@ -315,7 +321,7 @@ ___
 Poniższe polecenia dotyczą projektu testów jednostkowych **(1 pkt.)**
 
 11. Utwórz testy jednostkowe dla:
-    * _properties_ `Stopien`,
+    * _property_ `Stopien`,
     * operatora dodawania wielomianów.
 
 ___
@@ -325,6 +331,7 @@ Poniższe polecenia dotyczą projektu typu _console app_.
 12. Metoda rozszerzająca - `Eval` **(2 pkt.)**
     * Utwórz metodę rozszerzającą klasę `Wielomian` o nazwie `Eval`, która dla argumentu typu `double` zwróci obliczoną wartość wielomianu dla tego argumentu.
         > Na przykład, dla wielomianu `w = new W(1,2,1)` funkcja `w.Eval(2.0)` zwróci `9.0`.
+        > Podpowiedź: Schemat Hornera. Wykonaj implementację rekurencyjną i iteracyjną.
 
 13. Sortowanie listy wielomianów **(2 pkt.)**
     * Utwórz listę kliku różnych wielomianów (różnego stopnia o różnych współczynnikach, w różnej kolejności).
@@ -344,7 +351,7 @@ Do oceny przesyłasz _solution_ z projektami, skompresowane w formie archiwum ZI
 
 Rozmiar klasy `Wielomian` - w moim przypadku - nie przekroczył 150 linii kodu, przy zachowaniu standardowego, automatycznego formatowania C#. Nie zwracałem uwagi na maksymalne uproszczenie czy kompresję zapisu.
 
-#### Bonus
+#### Bonus 1
 
 * Zmodyfikuj `ToString()` tak, aby tekstową reprezentacją wielomianu był zapis algebraiczny z pewnymi matematycznymi uproszczeniami:
   * współczynnik `0` powoduje, że jednomian w zapisie wielomianu znika (np. \(0x^2 \))
@@ -355,3 +362,8 @@ Rozmiar klasy `Wielomian` - w moim przypadku - nie przekroczył 150 linii kodu, 
 * Zmodyfikuj metodę `Parse` tak, aby poprawnie interpretowała również ten sposób tekstowej reprezentacji wielomianu.
 
 * Zaimplementuj konstruktor tworzący `Wielomian` w oparciu o tak zadany napis.
+
+#### Bonus 2
+
+* Zaimplementuj mnożenie wielomianów
+* Zaimplementuj dzielenie wielomianów (dzielenie z resztą)
