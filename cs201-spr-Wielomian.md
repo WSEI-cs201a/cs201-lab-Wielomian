@@ -200,7 +200,7 @@ Analizuj podany kod i użyj w implementacji klasy `Wielomian` właściwych nazw 
 
 Wynik działania podanego kodu dla poprawnej implementacji podano poniżej:
 
-```console
+```plaintext
 == Test implementacji klasy Wielomian! ==
 == Konstrukcja ==
 wielomian domyślny W() = 0, stopień = 0
